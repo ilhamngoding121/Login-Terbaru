@@ -1,0 +1,106 @@
+*{
+  margin-top: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(https://image2url.com/images/1756214379822-34a5563f-a55c-4e25-b810-2766a044f08a.jpg);
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.glass-card {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: white;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.glass-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.glass-card p {
+  font-size: 14px;
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+
+.glass-card label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.glass-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.glass-card input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.glass-card button {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.glass-card button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
